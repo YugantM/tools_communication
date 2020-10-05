@@ -4,7 +4,7 @@ import sys,getopt
 
 def target(key):
 
-    print("".join(sys.stdin))
+    print("from the traget function","".join(sys.stdin))
     #string = json.dumps(sys.stdin)
     string = json.load(sys.stdin)
 
