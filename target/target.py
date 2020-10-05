@@ -4,9 +4,9 @@ import sys,getopt
 
 def target(key):
 
-    print("from the traget function","".join(sys.stdin))
+    print("from the traget function",type("".join(sys.stdin)))
     #string = json.dumps(sys.stdin)
-    string = json.loads(sys.stdin.read())
+    string = json.loads("".join(sys.stdin))
 
     if key in string.keys():
         print(string[key])
