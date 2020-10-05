@@ -5,7 +5,7 @@ import sys,getopt
 def target(key):
 
     #string = json.dumps(sys.stdin)
-    string = json.load(string)
+    string = json.load(sys.stdin)
 
     if key in string.keys():
         print(string[key])
