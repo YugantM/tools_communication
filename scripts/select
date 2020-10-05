@@ -1,6 +1,0 @@
-#! /usr/bin/python
-
-import select
-import sys
-
-select.main(sys.argv[1:])

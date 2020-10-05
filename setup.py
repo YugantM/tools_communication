@@ -1,16 +1,16 @@
 from distutils.core import setup
 setup(
-  name = 'select',         
-  packages = ['select'],   
+  name = 'target',         
+  packages = ['target'],   
   version = '1.0',      
   license='MIT',        
   description = '',   
   url = 'https://github.com/YugantM/tools_communication',   
   download_url = 'https://github.com/YugantM/tools_communication.git',
   entry_points = {
-              'console_scripts': ['select = select.__main__:main',],
+              'console_scripts': ['target = target.__main__:main',],
               },
-  scripts=['scripts/select'],  
+  scripts=['scripts/target'],  
   keywords = ['search', 'json'],  
   
   classifiers=[

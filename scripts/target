@@ -1,0 +1,6 @@
+#! /usr/bin/python
+
+from target import target
+import sys
+
+target.main(sys.argv[1:])
