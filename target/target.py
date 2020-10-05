@@ -4,7 +4,7 @@ import sys,getopt
 
 def target(key):
 
-    print(sys.stdin)
+    print("".join(sys.stdin))
     #string = json.dumps(sys.stdin)
     string = json.load(sys.stdin)
 
