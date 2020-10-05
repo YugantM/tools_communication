@@ -7,7 +7,7 @@ def target(key):
     print("from the traget function","".join(sys.stdin))
     #string = json.dumps(sys.stdin)
     #string = json.dumps("".join(sys.stdin))
-    string = json.loads(string)
+    string = json.loads("".join(sys.stdin))
     print(string[key])
 
     if key in string.keys():
