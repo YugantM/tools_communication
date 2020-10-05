@@ -13,9 +13,9 @@ def target(key):
     string = json.loads(string)
 
     if key in string.keys():
-        print(string[key])
+        print(string)
 
-        return string[key]
+        return string
 
     else:
 
