@@ -4,11 +4,13 @@ import sys,getopt
 
 def target(key):
 
+    print(sys.stdin)
     #string = json.dumps(sys.stdin)
     string = json.load(sys.stdin)
 
     if key in string.keys():
         print(string[key])
+
 
         return string
 
