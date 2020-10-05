@@ -2,7 +2,7 @@
 import json
 import sys,getopt
 
-def select():
+def select(argv):
 	opts, args = getopt.getopt(argv,"k",["key"])
 
 	for opt, arg in opts:
@@ -32,4 +32,4 @@ def select():
 
 
 if __name__ == '__main__':
-	select()
+	select(sys.argv[1:])
