@@ -5,28 +5,28 @@ import sys,getopt
 def target(key):
     string = ''
 
-	for line in sys.stdin:
-		string += str(line)
+    for line in sys.stdin:
+        string += str(line)
 
 
-	string = json.dumps(string)
-	string = json.loads(string)
+    string = json.dumps(string)
+    string = json.loads(string)
 
-	if key in string.keys():
-		print(string[key])
+    if key in string.keys():
+        print(string[key])
 
-		return string[key]
+        return string[key]
 
-	else:
+    else:
 
-		print('No such keys found')
-		return 0
+        print('No such keys found')
+        return 0
 
 def main(argv):
 
-	opts, args = getopt.getopt(argv,"k",["key"])
+    opts, args = getopt.getopt(argv,"k",["key"])
 
-	for opt, arg in opts:
+    for opt, arg in opts:
         if opt == '-k':
 
             key = arg
@@ -36,4 +36,4 @@ def main(argv):
 
 
 if __name__ == '__main__':
-	main(sys.argv[1:])
+    main(sys.argv[1:])
