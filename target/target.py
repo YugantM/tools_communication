@@ -3,17 +3,12 @@ import json
 import sys,getopt
 
 def target(key):
-    string = ''
 
-    for line in sys.stdin:
-        string += str(line)
-
-
-    string = json.dumps(string)
-    string = json.loads(string)
+    #string = json.dumps(sys.stdin)
+    string = json.load(string)
 
     if key in string.keys():
-        print(string)
+        print(string[key])
 
         return string
 
