@@ -31,7 +31,7 @@ def main(argv):
             key = arg
 
     #print(target(key))
-    return tagert(key)
+    return target(key)
 
 
 if __name__ == '__main__':
