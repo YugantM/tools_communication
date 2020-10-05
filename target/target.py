@@ -6,7 +6,7 @@ def target(key):
 
     print("from the traget function","".join(sys.stdin))
     #string = json.dumps(sys.stdin)
-    string = json.dumps("".join(sys.stdin))
+    #string = json.dumps("".join(sys.stdin))
     string = json.loads(string)
     print(string[key])
 
@@ -30,8 +30,8 @@ def main(argv):
 
             key = arg
 
-    print(target(key))
-    return target(key)
+    #print(target(key))
+    return tagert(key)
 
 
 if __name__ == '__main__':
