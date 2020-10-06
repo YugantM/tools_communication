@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import json
-import sys,getopt
+import sys,getopt,ast
 
 def target(key):
 
@@ -9,6 +9,7 @@ def target(key):
     dump = json.dumps("".join(sys.stdin))
     string = json.loads(dump)
 
+    print(ast.literal_eval(string)[key])
     print(string[key])
 
     if key in string.keys():
