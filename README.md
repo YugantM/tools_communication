@@ -5,7 +5,7 @@ This repo contains source code of the Linux Command named target. This command i
 ### Usage
 
 ```sh
-target
+target -k <key_of_JSON>
 # options
 # -k | key
 ```
