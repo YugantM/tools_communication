@@ -7,9 +7,10 @@ def target(key):
     print("from the traget function","".join(sys.stdin))
     #string = json.dumps(sys.stdin)
     dump = json.dumps("".join(sys.stdin))
-    string = json.loads(dump)
+    string = json.loads(dump.replace("'", "\""))
 
-    print(ast.literal_eval(string)[key])
+    print(len(string),dump)
+    print(ast.literal_eval(string))
     print(string[key])
 
     if key in string.keys():
