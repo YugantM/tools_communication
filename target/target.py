@@ -6,7 +6,7 @@ def target(key):
 
     print("from the traget function","".join(sys.stdin))
     
-    message = json.dumps(sys.stdin)
+    message = "".join(sys.stdin)
     dump = json.dumps(message)
     string = json.loads(dump.replace("'", "\""))
 
