@@ -5,11 +5,12 @@ import sys,getopt,ast
 def target(key):
 
     print("from the traget function","".join(sys.stdin))
-    #string = json.dumps(sys.stdin)
-    dump = json.dumps("".join(sys.stdin))
+    
+    message = json.dumps(sys.stdin)
+    dump = json.dumps(message)
     string = json.loads(dump.replace("'", "\""))
 
-    print(len(string),dump)
+    print(len(string),dump,message,string)
     print(ast.literal_eval(string))
     print(string[key])
 
