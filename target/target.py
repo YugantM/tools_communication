@@ -3,16 +3,8 @@ import json
 import sys,getopt,ast
 
 def target(key):
-
-    print("from the traget function","".join(sys.stdin))
     
-    message = "".join(sys.stdin)
-    dump = json.dumps(message)
-    string = json.loads(dump.replace("'", "\""))
-
-    print(len(string),dump,message,string)
-    print(ast.literal_eval(string))
-    print(string[key])
+    string = json.loads("".join(sys.stdin)) 
 
     if key in string.keys():
         print(string[key])
@@ -34,8 +26,8 @@ def main(argv):
 
             key = arg
 
-    #print(target(key))
-    return target(key)
+    
+    return target(args[0])
 
 
 if __name__ == '__main__':
